@@ -18,6 +18,8 @@ const Formulario = ({handleAdd, transactionsList, setTransactionsList }) => {
     } else if (amount < 1) {
       alert("O valor tem que ser positivo!");
       return;
+    } else if (amount >= 1){
+      alert("Deseja cadastrar o valor: " + amount + "?");
     }
 
     const transaction = {
